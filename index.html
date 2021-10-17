@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello</title>
+</head>
+<style>
+    img {
+        display: block;
+    }
+
+    a {
+        font-size: 20px;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 120%;
+    }
+
+    nav {
+        overflow: hidden;
+        background-color: #333;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a:hover{
+        background-color: #ddd;
+        color: black;
+    }
+
+    
+</style>
+
+<body bgcolor="powderblue">
+  
+    <center><h2>Experiment 5B: Problem Statement 2</h2></center>
+    <center><h3>Write a program in any language to find the maximum and
+minimum element in an array.</h3></center>
+
+  
+<center>
+    <article id="code">
+        <h1>Code</h1>
+        <textarea id="w3review" name="w3review" rows="20" cols="60">
+      #include<iostream>
+using namespace std;
+int main()
+{
+    int n=5;
+    int arr[5]={12,34,56,76,89};
+    int max=arr[0];
+    int min=arr[0];
+    for(int i=0;i<n;i++)
+    {
+        if(arr[i]>max)
+        {
+            max=arr[i];
+        }
+        if(arr[i]<min)
+        {
+            min=arr[i];
+        }
+    }
+    cout<<"Minimum element in array::"<<min<<endl;
+    cout<<"Maximum element in array::"<<max<<endl;
+    return(0);
+}
+        
+        </textarea>
+    </article>
+
+    
+
+    <section id="result">
+
+        <h1>Results</h1>
+        <h3>Sample Output</h3>
+        <img src="sample1.png" alt="input" height="100px" width="500px">
+    </section>
+
+    <section id="variables">
+        <h1>Variables Used</h1>
+        <ul>
+            <li>n: size of array</li>
+            <li>arr:array with size n</li>
+            <li>max:store max element of array</li>
+            <li>min:store min element of array</li>
+        </ul>
+    </section>
+
+    <section id="complexity">
+        <h1>Complexity</h1>
+        <h3><i>O(n)</i></h3>
+    </section>
+
+    <section id="reference">
+        
+        <h1>Refer:</h1>
+        <a style="font-size:100%; color:black" href="https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array/"><i>Minimum and Maximum elements of array</i></a>
+
+</section>
+
+  
+
+
+    <footer style="text-align: center;">
+        PRN:2020BTECS00210 Gayatri Sopan Gade
+    </footer>
+</center>
+</body>
+</html>
